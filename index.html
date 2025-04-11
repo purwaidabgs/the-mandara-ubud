@@ -5,6 +5,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<title>The Mandara Ubud</title>
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<!-- Pastikan link Font Awesome dimuat dengan benar -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
 			.animated-button {
@@ -33,6 +35,11 @@
 				letter-spacing: 0.1em; /* Add spacing between letters */
 				text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
 				margin-bottom: 1rem; /* Add spacing below the heading */
+			}
+
+			/* Tambahkan fallback untuk memastikan ikon tetap muncul */
+			.fa-map-marker:before {
+				content: "\f041"; /* Unicode untuk ikon map marker */
 			}
 		</style>
 	</head>
@@ -124,7 +131,7 @@
 									</a>
 									<div class="caption">
 										<h3>Parking Villas</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+										<p>Enterance and parking to the villas.</p>
 										<ul class="actions fixed">
 											<li><a href="#details-parking" class="button small">Details</a></li>
 										</ul>
@@ -136,7 +143,7 @@
 									</a>
 									<div class="caption">
 										<h3>The Private Villas</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+										<p>Joglo Lawasan villa.</p>
 										<ul class="actions fixed">
 											<li><a href="#details-private" class="button small">Details</a></li>
 										</ul>
@@ -273,43 +280,46 @@
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum.</p>
 							<div class="items style1 medium onscroll-fade-in">
 								<section>
-									<span class="icon style2 major fa-gem"></span>
-									<h3>Lorem</h3>
+									
+									
+									<!-- Validasi elemen dengan kelas ikon -->
+									<span class="icon style2 fa-map-marker" aria-hidden="true"></span>
+									<h3>Location</h3>
+									<p>10 minutes from Ubud central.</p>
+								</section>
+								<section>
+									<span class="icon solid style2 major fa-bed"></span>
+									<h3>Bedroom</h3>
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
 								</section>
 								<section>
-									<span class="icon solid style2 major fa-save"></span>
-									<h3>Ipsum</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-chart-bar"></span>
-									<h3>Dolor</h3>
+									<span class="icon solid style2 major fa-leaf"></span>
+									<h3>Nature Vibes</h3>
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
 								</section>
 								<section>
 									<span class="icon solid style2 major fa-wifi"></span>
-									<h3>Amet</h3>
+									<h3>Wifi</h3>
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
 								</section>
 								<section>
-									<span class="icon solid style2 major fa-cog"></span>
-									<h3>Magna</h3>
+									<span class="icon solid style2 major fa-swimming-pool"></span>
+									<h3>Pool</h3>
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
 								</section>
 								<section>
-									<span class="icon style2 major fa-paper-plane"></span>
-									<h3>Tempus</h3>
+									<span class="icon style2 major fa-spa"></span>
+									<h3>Spa</h3>
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
 								</section>
 								<section>
-									<span class="icon solid style2 major fa-desktop"></span>
-									<h3>Aliquam</h3>
+									<span class="icon solid style2 major fa-shield-alt"></span>
+									<h3>Keamanan</h3>
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
 								</section>
 								<section>
-									<span class="icon solid style2 major fa-sync-alt"></span>
-									<h3>Elit</h3>
+									<span class="icon solid style2 major fa-smile"></span>
+									<h3>Staff Ramah</h3>
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
 								</section>
 								<section>
