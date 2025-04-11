@@ -8898,4 +8898,16 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 1;
   transform: translateY(0);
 }
+@media (max-width: 768px) {
+	.banner h1 {
+	  font-size: 28px;
+	  text-align: center;
+	  padding: 0 15px;
+	}
+  
+	.banner p.major {
+	  font-size: 16px;
+	  text-align: justify;
+	  padding: 0 20px;
+    }
   }
