@@ -8763,6 +8763,59 @@ input, select, textarea {
   --hover-color: #d4af37; /* Brighter Gold */
 }
 
+/* Styling for the booking section */
+.booking-section {
+	background: linear-gradient(135deg, #f3e5ab, #d4af37); /* Luxurious gradient */
+	padding: 50px;
+	border-radius: 10px;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+	color: #333;
+	text-align: center;
+}
+
+.booking-section h2 {
+	font-size: 2.5em;
+	margin-bottom: 20px;
+	color: #b8860b; /* Gold accent */
+}
+
+.booking-section form {
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.booking-section input,
+.booking-section select,
+.booking-section textarea {
+	width: 100%;
+	padding: 15px;
+	margin: 10px 0;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 1em;
+}
+
+.booking-section input[type="date"] {
+	margin-bottom: 15px; /* Add spacing below each date input */
+}
+
+.booking-section button {
+	background-color: #d4af37;
+	color: #fff;
+	border: none;
+	padding: 15px 30px;
+	border-radius: 5px;
+	font-size: 1.2em;
+	cursor: pointer;
+	transition: background-color 0.3s ease, transform 0.3s ease;
+	margin-top: 20px; /* Add spacing above the button */
+}
+
+.booking-section button:hover {
+	background-color: #b8860b;
+	transform: scale(1.05);
+}
+
 /* Luxury Font */
 body, input, select, textarea {
   font-family: "Playfair Display", serif;
@@ -8871,6 +8924,22 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   transition: 0.3s ease-in-out;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Updated styling for the animated button to match other buttons */
+.animated-button {
+	background-color: #d4af37; /* Gold color for luxury */
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	text-decoration: none;
+	transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.animated-button:hover {
+	background-color: #b8860b; /* Darker gold on hover */
+	transform: scale(1.1);
 }
 
 .button:hover {

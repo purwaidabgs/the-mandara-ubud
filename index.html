@@ -155,7 +155,7 @@
 									</a>
 									<div class="caption">
 										<h3>Bedroom</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+										<p>6x6.</p>
 										<ul class="actions fixed">
 											<li><span class="button small">Details</span></li>
 										</ul>
@@ -380,7 +380,21 @@
 
 						</div>
 					</section>
-
+<!-- === Booking Section Start === -->
+<section class="wrapper style1 align-center">
+	<div class="inner">
+	  <h2>Booking Mandara Villas</h2>
+	  <form id="bookingForm">
+		<input type="text" id="name" placeholder="Nama Anda" required />
+		<input type="date" id="checkin" required />
+		<input type="date" id="checkout" required />
+		<button type="submit">Booking</button>
+	  </form>
+	  <div id="bookingResult"></div>
+	</div>
+  </section>
+  <!-- === Booking Section End === -->
+  
 				<!-- Footer -->
 					<footer class="wrapper style1 align-center">
 						<div class="inner">
@@ -405,6 +419,23 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+				document.getElementById("bookingForm").addEventListener("submit", function (e) {
+				  e.preventDefault();
+				
+				  const name = document.getElementById("name").value;
+				  const checkin = document.getElementById("checkin").value;
+				  const checkout = document.getElementById("checkout").value;
+				
+				  document.getElementById("bookingResult").innerHTML = `
+					<h3>Booking Anda:</h3>
+					<p><strong>Nama:</strong> ${name}</p>
+					<p><strong>Check-in:</strong> ${checkin}</p>
+					<p><strong>Check-out:</strong> ${checkout}</p>
+				  `;
+				});
+				</script>
+				
 
 	</body>
 </html>
